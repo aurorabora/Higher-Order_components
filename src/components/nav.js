@@ -16,10 +16,10 @@ class Nav extends Component{
                             <Link to="/about"> About</Link>
                         </li>
                         <li>
-                            <Link to="/secret-docs">Secret Doc</Link>
+                            <Link to="/secret-doc">Secret Doc</Link>
                         </li>
                         <li>
-                            <Link to="/operatives-list"> Operative List</Link>
+                            <Link to="/operative-list"> Operative List</Link>
                         </li>
                     </ul>
                 </div>

@@ -12,9 +12,9 @@ const App = () => (
         <Nav/>
         <div className="container">
             <Route exact path="/" component={Home} />
-            <Route path="about" component={About} />
+            <Route path="/about" component={About} />
             <Route path="/secret-doc" component={SecretDocs} />
-            <Route path="operative-list" component={OperativesList}/>
+            <Route path="/operative-list" component={OperativesList}/>
         </div>
     </div>
 );
