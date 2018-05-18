@@ -1,6 +1,6 @@
-# React Starter
+# User Authentication Demo
 
-> This repo contains boilerplate code to aid in the creation of a new React app with Redux. Follow the below setup instructions to get started.
+> User auth demo using ReactJS and ReduxJS
 
 ### Setup Instructions
 
