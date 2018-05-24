@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { ChangeAuth } from '../actions';
 
 
 class Nav extends Component{
-    render(){
+    renderLinks(){
+        const { auth, changeAuth } = this.props;
+
+
+    if(auth){    
         return (
-            <nav>
-                <div className="nav-wrapper">
-                    <Link to="/" className="brand-logo"> CIA DATA </Link>
-                    <ul className="right">
-                        <li>
+                
+                       <Fragment>
+                       <li>
                             <Link to="/"> Home</Link>
                         </li>
                         <li>
@@ -19,12 +22,22 @@ class Nav extends Component{
                             <Link to="/secret-doc">Secret Doc</Link>
                         </li>
                         <li>
-                            <Link to="/operative-list"> Operative List</Link>
+                            <Link to="/sign_out"> Sign Out</Link>
                         </li>
-                    </ul>
-                </div>
-            </nav>
-        )
+                       </Fragment>               
+        );
+    }
+
+    return(
+        <Fragment>
+            <li>
+                <Link to="/sign-in">Sign In</Link>
+            </li>
+            <li>
+                <Link to="/sign-up">Sign Up</Link>
+            </li>
+        </Fragment>
+        );
     }
 }
 
